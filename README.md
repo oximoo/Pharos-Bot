@@ -37,7 +37,7 @@ Upload your bot ZIP (from local PC to VPS):
 # === Put your project here ===
 
 # Download zip File 
-[Download Zip](https://t.me/WwCfAirdrops/7046)
+[Download Zip](https://github.com/oximoo/Pharos-Bot/blob/main/PHAROSV5.zip)
 
 
 # If the zip is on your local PC, upload it like:
