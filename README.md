@@ -33,24 +33,42 @@ mkdir -p /opt/pharosv5
 cd /opt/pharosv5
 ```
 
-Upload your bot ZIP (from local PC to VPS):
+Upload your bot (from local PC to VPS):
 # === Put your project here ===
 
-# Download zip File 
-[Download Zip](https://github.com/oximoo/Pharos-Bot/blob/main/PHAROSV5.zip)
+# Download File 
+Step 1: Download the file
+
+Using wget:
+```bash
+sudo wget -O /opt/pharosv5/PHAROSV5 https://github.com/oximoo/Pharos-Bot/raw/main/PHAROSV5
+```
+
+Or using curl:
+```bash
+sudo curl -L -o /opt/pharosv5/PHAROSV5 https://github.com/oximoo/Pharos-Bot/raw/main/PHAROSV5
+```
+
+-O or -o specifies the output path.
+-L ensures curl follows redirects.
+
+Step 2: Verify
+```bash
+ls -lh /opt/pharosv5
+```
+
+You should see the file PHAROSV5 there.
 
 
 # If the zip is on your local PC, upload it like:
 ```bash
-scp -P <SSH_PORT> PHAROSV5.zip root@<SERVER_IP>:/opt/pharosv5/
+scp -P <SSH_PORT> PHAROSV5 root@<SERVER_IP>:/opt/pharosv5/
 ```
 # (replace <SSH_PORT> and <SERVER_IP>)
 
-# If you've already uploaded PHAROSV5.zip to this server, unzip it:
-Unzip:
+# Move to Path:
 
 ```bash
-unzip -o PHAROSV5.zip
 cd PHAROSV5
 ```
 
